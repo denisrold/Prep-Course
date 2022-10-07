@@ -1,0 +1,43 @@
+
+body {background-image: url("https://i.postimg.cc/Df6zVwr8/cafefondo.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: 100%;
+
+}
+
+
+
+			#thirdDiv{height: 500px;}
+	     	#thirdDiv{width: 600px;}
+  			#thirdDiv{background: gray;}
+  			#thirdDiv{padding: 50px;}
+  			#thirdDiv{border: 5px dashed white;}
+  			#thirdDiv{background-position: center;}
+  			#thirdDiv{margin-left: auto;}
+            #thirdDiv{margin-right: auto;}
+
+
+  			#spanid{font-size: 18px;}
+  			#spanid{margin: 50px;}
+  			#spanid{color: black;}
+  		    #spanid{border: 3px solid black;}
+  		    #spanid{margin-right: auto;}
+  		    #spanid{margin-left: 120px;}
+
+h3,h6{color: limegreen;
+}
+
+.divclass{
+background-color: grey;
+height: 50px;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+.flexc{
+	display: flex;
+	text-align: center;
+	margin-left: 100;
+}
