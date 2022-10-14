@@ -1,0 +1,23 @@
+
+VARIABLES: nombre simbolico para un valor
+DATO CAJA DE DATO CON UN NOMBRE.
+AL CUAL PUEDE ASIGNARSELE UN VALOR UN SIGNIFICADO CON EL =
+CAJA VACIA CON NOMBRE ETIQUETA PARA ASIGNAR UN VALOR
+
+Strings: cadena de caracteres. ""
+
+funciones: formas de activar cierto codigo para que realiza una funcion. lleve adelante una tarea que yo programe
+argumentos: palabras o valores o parametros para programar o trabajar en la funcion. para hacerla funcionar. // investigar 
+son las variables que necesitan las funciones para funcionar.
+Antes de que pueda utilizarlos, la función debe indicar cuántos argumentos necesita y cuál es el nombre de cada argumento. Además, al invocar la función, se deben incluir los valores que se le van a pasar a la función.
+
+return: es una sentencia, retorna. especifico a una funcion que retrone algo. el return corta la  funcion. retrna un valor a quien llama a la funcion
+
+console.log() invoca a que se muestre algo. 
+
+if: control de flujo. 
+le digo al interprete que evalue el if. para ver que activa cierta funcion cierto mecanismo. si no corresponde con los valores del if sigue su camino
+si entra en los valores del if. me retornara o activara la funcion que ahi se guarde.
+
+VALORES BOOLEANOS: // ver definicion
+ se usa para comparaciones y establecer algo verdadero o falso. segun el interprete y segun el codigo establecido. si algo es verdad o no. 

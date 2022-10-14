@@ -1,0 +1,9 @@
+`for` genera un bucle . para tal cosa quiero que hagas esto.  marcando un inicio un final y como quiero progresar dentro del bucle 
+i = 0 quiero que empiece en 0  ; i < numero quiero que i termine antes de llegar al numero ; i++ o i-- quiero que ir sume progrese o reste retroceda de 1 en 1 ;  luego de establecer la pauta de como y hasta cuando quiero que sea el bucle for le pongo la funcion en la que se va a usar ese bucle. hasta que i < numero.
+puedo usar metodos. o sentencias dentro 
+
+`&&`, operadores booleanos  and osea quiero que tal condicion si se cumple y esta otra sera true sino sera false
+
+`||`, or quiero que se cumpla cierta condicion o cierta otra condicion. si alguna de las dos se cumplen sera true   
+
+`!`, not  no  si se cumple que no sea asi sera true si es asi sera false

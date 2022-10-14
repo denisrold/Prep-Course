@@ -1,0 +1,44 @@
+objetos: Los objetos en JS son el equivalente a los objetos en la vida real: un objeto tiene propiedades y funcionalidades.
+los objetos cuentan con una key(llave) y un valor: value
+
+var objeto = {
+	taca: taca,
+	tuki: tuki,
+}
+
+
+
+propiedades: son las caracteristicas del objeto.
+
+
+
+metodos: son funciones dentro de objetos.
+
+
+
+bucle for in: el bucle for in 
+se usa para recorrer propiedades en objetos.
+
+
+notacion de puntos: es una forma simple de acceder a las propiedades de los objetos.  a travez de un punto
+objeto.propiedad
+
+También podemos cambiar las propiedades de nuestro objeto, simplemente asignándole una nueva: 
+
+user.age = 15;
+
+console.log(user.age) // 15
+
+vs
+
+Esta es otra manera (menos usada) de acceder a las propiedades de un objeto: mediante corchetes y comillas. Es decir, estos dos console.log nos darían el mismo resultado. 
+
+console.log(user.age)
+
+console.log(user["age"]
+
+También podríamos cambiar una propiedad usando el square brackets notation.  Si ahora usamos el typeof operator para ver qué tipo de dato es nuestro user, verás que la consola nos devuelve que es un objeto 👌
+console.log(typeof user) // "object"
+
+notacion de corchetes: es la forma de acceder entrar o llamar a las propiedades del objeto. bracket notation.
+objeto['propiedad']

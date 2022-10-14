@@ -1,0 +1,1 @@
+array: arreglos. listas dentro de items o variables. listas con indices numericos, arreglos numericos enlistados dentro de una variable.

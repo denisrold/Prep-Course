@@ -7,13 +7,28 @@ function crearUsuario() {
   // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
-  // Tu código:
+  // Tu código: opciones es el objeto donde van a estar los parametros
+  // asi que lo uso como argumento para crear la funcion
+// le estoy diciendo del parametro opciones traeme usuario. opciones.usuario
+  function Usuario(opciones){
+    this.usuario = opciones.usuario;
+    this.nombre =  opciones.nombre;
+    this.email = opciones.email;
+    this.password = opciones.password;
+  }
+  Usuario.prototype.saludar = function(){
+    return `Hola, mi nombre es ${this.nombre}`
+  }
+  return Usuario;
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+  Constructor.prototype.saludar = function(){
+    return "Hello World!"
+  }
 }
 
 function agregarStringInvertida() {
@@ -22,6 +37,17 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+String.prototype.reverse = function(){
+var alrevez = "";
+for (var i = this.length ;i >= 0; i--){
+alrevez += this.charAt(i -1);
+///// aca le estoy diciendo que agarre la palabra de el prototypo string y la separe en caracteres una por una y las vaya agregarndo a la variable alrevez alrevez 
+// la letra (i - 1) es porque quiero que empiece en la ultima letra como no se la posicion de la ultima 
+// es (i - 1)
+}
+return alrevez;
+}
+
 }
 
 // ---------------------------------------------------------------------------//
@@ -36,21 +62,53 @@ function agregarStringInvertida() {
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
-      // Crea el constructor:
-
-    }
+    constructor(nombre, apellido, edad, domicilio/*Escribir los argumentos que
+    //                                            recibe el constructor*/) {
+      // Crea el constructor: esto es un constructor mirar como esta armado el constructor. 
+this.nombre =    nombre;
+this.apellido =  apellido;
+this.edad =      edad;
+this.domicilio = domicilio;
+this.detalle = function(){
+  return {                            //esto devuelvo un objeto mirar como esta armado el objeto/ 
+    Nombre:   this.nombre,      
+    Apellido: this.apellido,
+    Edad:     this.edad,
+    Domicilio:this.domicilio,     ///el this dentro de este objeto hace referencia apuntando al this del constructor 
+  }
 }
+    }
+/// si quiesiera usar get dentro de la clase para exportar por ejemplo la funcion detalle del costructor lo haria asi :
+/// get detalle(){
+//     return this.getDetalle();
+// }
+//getDetalle(){
+//return { 
+//nombre: this.nombre, etc etc etc  
+//}
+}
+
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  return new Persona(nombre, apellido, edad, dir)
+
+  ///la forma de hacerlo seria 
+  /// const persona = new Persona(nombre, apellido, edad, dir);
+  /// return persona;
+  ///
 }
   
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
+  Persona.prototype.datos = function(){
+return this.nombre + ', ' + this.edad + " años";
+
+// tambien podrian hacerse: return `${this.nombre}, ${this.edad} años`
+  }
 }
   
 

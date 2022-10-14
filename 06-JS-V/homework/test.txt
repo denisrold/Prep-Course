@@ -1,0 +1,6 @@
+prototype:
+
+son la caja de propiedades dentro de la caja de propiedades dentro de la caja de propiedades hasta que te quedas sin cajas grandes guardando las cajas de propiedades y la ultima tiene null/
+ahi deja de buscar dentro de  los prototipos  de objetos y devuelve undefined. seria como meter objetos en una caja mas grande donde esa caja mas grande tiene mas propiedades para ese objeto. 
+
+constructor de class:
