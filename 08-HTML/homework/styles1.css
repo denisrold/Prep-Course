@@ -1,0 +1,23 @@
+				h1{
+					color: coral;
+				}
+				img{ 
+				width: 400px;
+				}
+
+				#thirdDiv{
+				heigth: 600px;
+				width: 500px;
+				background-color: teal;
+				padding: 50px;
+				border: 10px solid; color: steelblue;
+				}
+
+				#spanid{
+				font-size: 18px;
+				margin: 50px ;
+				}
+
+				.divclass{
+				
+				}
